@@ -23,7 +23,7 @@ roles:
 
 replicas: 1
 minimumMasterNodes: 1
-clusterHealthCheckParams: 'wait_for_status=yellow&timeout=1s'
+
 
 esMajorVersion: ""
 
@@ -90,11 +90,11 @@ esJavaOpts: "" # example: "-Xmx1g -Xms1g"
 
 resources:
   requests:
-    cpu: "2000m"
+    cpu: "1000m"
     memory: "512Mi"
   limits:
-    cpu: "2000m"
-    memory: "4Gi"
+    cpu: "1000m"
+    memory: "1Gi"
 
 initResources: {}
 # limits:
